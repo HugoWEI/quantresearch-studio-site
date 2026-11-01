@@ -56,17 +56,17 @@ h3{font-size:18px;margin:4px 0 10px;letter-spacing:-.025em}
 .price{font-size:65px;line-height:1.1;font-weight:850;letter-spacing:-.07em;margin:7px 0}
 .pricebox ul{padding-left:20px;color:var(--muted);line-height:1.95;margin:16px 0 23px}
 .prelaunch{background:#eaf4f1;border-left:3px solid var(--teal);padding:15px 17px;font-size:13px;color:#315a54;border-radius:5px;margin-top:17px}
-.faq details{border-bottom:1px solid var(--line);padding:18px 0}
+.feedback-panel{display:flex;justify-content:space-between;align-items:center;gap:25px;border:1px solid #bdd6ce;border-radius:16px;background:#ebf5f0;padding:28px 30px}.feedback-panel h3{font-size:24px;margin:8px 0}.feedback-panel p{margin:0;color:var(--muted);font-size:14px;max-width:620px}.feedback-panel .btn{white-space:nowrap}.faq details{border-bottom:1px solid var(--line);padding:18px 0}
 .faq summary{cursor:pointer;font-weight:750}
 .faq p{font-size:14px;color:var(--muted);max-width:850px}
 footer{border-top:1px solid var(--line);color:var(--muted);font-size:12px;padding:27px 0 45px}
 :focus-visible{outline:3px solid #62c8b7;outline-offset:3px}
-@media(max-width:840px){.hero,.price-grid{grid-template-columns:1fr;gap:36px}.hero{padding:46px 0}.sheet-wrap{max-width:550px;margin:auto;width:100%}.nav-right a{display:none}.grid{grid-template-columns:1fr}.section{padding:54px 0}.sheet{max-width:360px}}
+@media(max-width:840px){.hero,.price-grid{grid-template-columns:1fr;gap:36px}.hero{padding:46px 0}.sheet-wrap{max-width:550px;margin:auto;width:100%}.nav-right a{display:none}.grid{grid-template-columns:1fr}.feedback-panel{display:block;padding:23px}.feedback-panel .btn{width:100%;margin-top:18px}.section{padding:54px 0}.sheet{max-width:360px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<nav><div class="wrap nav"><a class="brand" href="#">Quant<span>Research</span> Studio</a><div class="nav-right"><a href="#included">Templates</a><a href="#pricing">Price</a><span class="tag">Founding beta</span></div></div></nav>
+<nav><div class="wrap nav"><a class="brand" href="#">Quant<span>Research</span> Studio</a><div class="nav-right"><a href="#included">Templates</a><a href="#pricing">Price</a><a href="#feedback">Feedback</a><span class="tag">Founding beta</span></div></div></nav>
 <main>
 <header class="wrap hero">
 <div>
@@ -107,9 +107,10 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:12px;paddin
 <div class="pricebox"><div class="kicker">Proposed one-time price</div><div class="price">$24</div><p class="muted">Full QuantResearch Studio bundle · Prelaunch</p>
 <ul><li>Quant CV and research CV</li><li>Scientific poster and PhD research statement</li><li>Worked fictional examples</li><li>Compilation and editing guide</li></ul>
 <a class="btn" style="width:100%" href="free-sample/quant-cv.tex" download>Try the free sample first</a>
-<div class="prelaunch"><strong>Not taking orders yet.</strong> The $24 offer is being tested. This preview contains no payment form, analytics tracker or personal-data collection.</div></div>
+<p style="text-align:center;margin:15px 0 0"><a href="https://github.com/HugoWEI/quantresearch-studio-site/issues/1" target="_blank" rel="noopener noreferrer">Tell us if you would buy it at $24</a></p><div class="prelaunch"><strong>Not taking orders yet.</strong> The $24 offer is being tested. This preview contains no payment form, analytics tracker or personal-data collection.</div></div>
 </div></section>
-<section class="section band faq"><div class="wrap"><div class="kicker">Frequently asked</div><h2>Before you edit</h2>
+<section class="section band" id="feedback"><div class="wrap"><div class="feedback-panel"><div><div class="kicker">Help us build the right thing</div><h3>Would you actually pay $24 for this?</h3><p>Answer five quick questions about the bundle, price and the document you need most. This is a public GitHub feedback thread, so a GitHub account is required. Please don't share personal information.</p></div><a class="btn" href="https://github.com/HugoWEI/quantresearch-studio-site/issues/1" target="_blank" rel="noopener noreferrer">Share feedback (GitHub)</a></div></div></section>
+<section class="section faq"><div class="wrap"><div class="kicker">Frequently asked</div><h2>Before you edit</h2>
 <details><summary>Will it work in Overleaf?</summary><p>The free template is standard LaTeX and intended for pdfLaTeX compilation. Upload the .tex file to Overleaf or compile locally. Full bundle compatibility will be verified before launch.</p></details>
 <details><summary>Will it pass an applicant-tracking system?</summary><p>No template can guarantee ATS compatibility. We focus on simple structure, selectable text and legible formatting, which can then be tested in the relevant application process.</p></details>
 <details><summary>Can I sell or redistribute the templates?</summary><p>The free file is made available for your own educational or professional document creation. Repackaging or reselling the template itself is not authorized. Commercial bundle license terms will be published before checkout launches.</p></details>
