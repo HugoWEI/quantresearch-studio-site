@@ -1,0 +1,52 @@
+% QuantResearch Studio — Free Quant CV Sample
+% An original one-page CV template for education and personal use.
+% All names and projects are fictional. Compile with pdfLaTeX.
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{geometry,enumitem,xcolor,hyperref,microtype,titlesec,tabularx}
+\geometry{left=1.65cm,right=1.65cm,top=1.45cm,bottom=1.35cm}
+\definecolor{ink}{HTML}{14263B}
+\definecolor{accent}{HTML}{166F79}
+\definecolor{muted}{HTML}{58687B}
+\hypersetup{colorlinks=true,urlcolor=accent}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagestyle{empty}
+\titleformat{\section}{\color{ink}\bfseries\small}{}{0em}{}[\vspace{-5pt}\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{9pt}{6pt}
+\newcommand{\role}[4]{\textbf{#1}\hfill\textcolor{muted}{#2}\\[-0.5pt]\textit{#3}\hfill\textcolor{muted}{#4}\vspace{1pt}}
+\setlist[itemize]{leftmargin=1.1em,topsep=1.5pt,itemsep=1.6pt,parsep=0pt,partopsep=0pt}
+\begin{document}
+{\fontsize{18}{21}\selectfont\bfseries\color{ink} ALEX MORGAN}\\[4pt]
+{\small\color{muted} London, UK \quad | \quad alex.morgan@example.org \quad | \quad
+\href{https://github.com/example}{github.com/example}}\\[3pt]
+{\small\color{accent}\bfseries Quantitative Research \quad / \quad Derivatives \quad / \quad Statistical Computing}
+\section{Experience}
+\role{Quantitative Research Intern}{Jun--Aug 2026}{Northbridge Analytics (fictional)}{London, UK}
+\begin{itemize}
+\item Built a Python calibration pipeline for synthetic interest-rate option data; reduced experiment runtime by \textbf{35\%} with caching and vectorization.
+\item Benchmarked model error against Monte Carlo estimates and documented failure cases and reproducible experiments.
+\item Developed unit-tested C++ numerical routines for pricing and sensitivity analysis.
+\end{itemize}
+\role{Research Assistant}{Sep 2025--May 2026}{Example Institute of Applied Mathematics (fictional)}{Paris, France}
+\begin{itemize}
+\item Studied nonlinear point-process models with simulated market data and compared parameter inference across three regimes.
+\end{itemize}
+\section{Selected Projects}
+\textbf{Market Microstructure Simulation}\hfill\textcolor{muted}{Python / Probability}
+\begin{itemize}
+\item Built an event-driven simulator to test execution-cost sensitivity to volatility and liquidity assumptions.
+\end{itemize}
+\section{Education}
+\textbf{MSc Applied Mathematics}, Example University (fictional)\hfill\textcolor{muted}{2024--2026}\\
+\textit{Stochastic Calculus, Numerical Methods, Statistical Learning, Optimization}
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Programming} & Python, C++17, NumPy, pandas, Git, Linux \\
+\textbf{Methods} & Monte Carlo, optimization, time series, statistical testing \\
+\end{tabularx}
+\vfill
+{\footnotesize\color{muted} Fictional example only. Replace claims with your own verifiable experience.}
+\end{document}
