@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A practical guide to quantitative finance CVs: how to describe research, coding, projects and results with examples. Free editable LaTeX sample included.">
+<title>How to Write a Quant Finance CV — QuantResearch Studio</title>
+<meta name="theme-color" content="#f9fbfa">
+<link rel="canonical" href="https://hugowei.github.io/quantresearch-studio-site/guide/quant-cv.html">
+<style>
+:root{--ink:#14283c;--muted:#516575;--teal:#116d6e;--line:#dce6e4;--bg:#f8fbf9;--soft:#e8f2ee}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--teal)}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line);background:white}
+nav{height:72px;display:flex;justify-content:space-between;align-items:center;gap:18px}
+.brand{text-decoration:none;font-size:20px;font-weight:850;color:var(--ink);letter-spacing:-.05em}
+.brand span{color:var(--teal)}
+.navlink{font-size:13px;font-weight:650;text-decoration:none}
+.eyebrow{color:var(--teal);text-transform:uppercase;font-size:12px;letter-spacing:.12em;font-weight:800}
+.intro{padding:68px 0 40px}
+h1{font-size:clamp(35px,5vw,56px);letter-spacing:-.06em;line-height:1.09;margin:13px 0 19px}
+h2{font-size:28px;letter-spacing:-.045em;line-height:1.2;margin:40px 0 15px}
+h3{font-size:18px;letter-spacing:-.025em;margin:19px 0 8px}
+.lede{color:var(--muted);font-size:18px;max-width:760px;margin-bottom:22px}
+main{padding-bottom:60px}
+.article{max-width:740px}
+.article p{margin:13px 0}
+.article li{margin:8px 0}
+.example{margin:21px 0;border:1px solid var(--line);background:white;border-radius:12px;padding:20px 23px}
+.label{color:var(--teal);font-weight:750;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.before{color:#7c4343}
+.after{color:#215f4f}
+.muted{color:var(--muted)}
+.tip{border-left:3px solid var(--teal);background:var(--soft);padding:16px 19px;margin:23px 0;border-radius:5px}
+.cta{margin:44px 0 0;padding:28px;background:#e9f3ef;border:1px solid #bed4ca;border-radius:14px}
+.cta h2{margin:0 0 10px}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:21px}
+.btn{display:inline-block;background:var(--ink);border-radius:9px;padding:12px 17px;color:white;font-size:14px;font-weight:700;text-decoration:none}
+.btn.alt{background:white;color:var(--ink);border:1px solid #b6cbc6}
+footer{border-top:1px solid var(--line);padding:27px 0 45px;font-size:12px;color:var(--muted)}
+a:focus-visible{outline:3px solid #54b3a1;outline-offset:3px}
+@media(max-width:640px){.intro{padding:42px 0 23px}.example{padding:16px}.cta{padding:19px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav><a class="brand" href="../">Quant<span>Research</span> Studio</a><a class="navlink" href="../">Back to templates</a></nav></div></header>
+<div class="wrap intro">
+<div class="eyebrow">Free guide · Quantitative careers</div>
+<h1>How to write a quant CV that explains what you actually did</h1>
+<p class="lede">A readable one-page CV is useful, but good typography alone cannot compensate for vague research or coding descriptions. Here's how to make your technical contributions understandable without exaggeration.</p>
+<p class="muted">Last updated November 2026 · Examples are illustrative, not claims about a real person.</p>
+</div>
+<main class="wrap"><div class="article">
+<h2>1. Start with evidence, not adjectives</h2>
+<p>“Analytical”, “passionate about markets” and “excellent programming skills” are easy to write and hard to verify. Recruiters need to see what you built, investigated or improved. MIT career guidance recommends experience bullets built around an action, its context and an outcome—not a list of job responsibilities.</p>
+<div class="example"><div class="label">Weak</div><p class="before">Worked on Python models for derivatives.</p><div class="label">Stronger — fictional example</div><p class="after">Implemented a Python Monte Carlo pricer for a European option; compared estimates against the Black–Scholes formula and reported convergence across simulation counts.</p></div>
+<p>The stronger version specifies the mathematical object, the implementation and how the result was checked. It doesn't invent a profitability or hiring outcome.</p>
+<h2>2. Explain model work with four ingredients</h2>
+<p>For a research or quant-development bullet, aim to include <strong>the problem, method, validation and your contribution</strong>. You rarely need every mathematical symbol on the CV.</p>
+<div class="example"><div class="label">Example — synthetic project</div><p>Calibrated a stochastic-volatility model to generated option prices using constrained least squares; compared fitted implied-volatility smiles with target data and documented instability in low-liquidity regimes.</p></div>
+<p>Don't list “Heston”, “LMM” or “deep learning” purely as keywords. Explain whether you derived, calibrated, implemented, benchmarked or merely studied the method.</p>
+<h2>3. Distinguish measured impact from invented precision</h2>
+<p>If you have a reproducible result, a number can help: runtime reduced from 40 to 25 seconds, model error compared across 100 simulated scenarios, or a method tested with defined cross-validation. If no reliable measurement exists, a clear deliverable beats a fabricated percentage.</p>
+<div class="example"><div class="label">Weak</div><p class="before">Improved trading model accuracy by 90%.</p><div class="label">Stronger without an invented metric</div><p class="after">Built reproducible pricing diagnostics to compare model and reference values across maturities and strikes; identified regions with persistent calibration error.</p></div>
+<h2>4. Put your most relevant work near the top</h2>
+<p>For a quant trading role, probability, numerical work, experimentation and execution or market-related problem solving may matter more than a generic list of software tools. For quant research, show modeling choices and tests. For quant development, expose implementation detail, performance profiling and testing.</p>
+<p>Tailor examples honestly to the job description. One universal CV may be convenient, but different audiences need to see different evidence first.</p>
+<h2>5. Avoid a “skills list” that outruns your projects</h2>
+<p>Listing Python, C++, PyTorch, probability, machine learning, stochastic calculus and optimization is not persuasive when the experience section shows none of those skills in context. Keep the skills section compact and demonstrate important tools within bullets.</p>
+<h2>6. Make free LaTeX work for you</h2>
+<p>Use a conventional layout, readable type, consistent dates and a PDF with selectable text. Avoid graphical skill meters, multi-column content that complicates extraction, tiny fonts and untested claims of “ATS-proof” performance. For early-career applicants, one page is often sensible; more experienced candidates may need longer.</p>
+<div class="tip"><strong>A quick quality test:</strong> Open the PDF, select all the text, copy it into a plain text editor and verify that the reading order makes sense. Then proofread the rendered PDF at ordinary zoom.</div>
+<h2>7. A five-minute pre-submission checklist</h2>
+<ul>
+<li>Can someone identify your most relevant technical contribution in the first few seconds?</li>
+<li>Do your bullets distinguish work you performed from work the whole team did?</li>
+<li>Are numerical claims traceable to a defensible measurement or experiment?</li>
+<li>Does the PDF copy into plain text in a sensible order?</li>
+<li>Are dates, links, location, project names and contact details correct?</li>
+<li>Are all examples, achievements and organizations genuine in your final CV?</li>
+</ul>
+<h2>Further reading</h2>
+<p>MIT Career Advising &amp; Professional Development provides free, general-purpose guidance on <a href="https://capd.mit.edu/resources/resumes/" target="_blank" rel="noopener noreferrer">resume structure</a> and <a href="https://capd.mit.edu/resources/resumes-writing-about-your-skills/" target="_blank" rel="noopener noreferrer">Project–Action–Result bullet writing</a>. This independent guide adapts those broad principles to technical CV examples; it is not endorsed by MIT.</p>
+<div class="cta"><div class="eyebrow">Try it for yourself</div><h2>Get an editable LaTeX CV, free</h2><p>Download the original single-file sample and replace the fictional examples with your own validated experience. We're also testing a proposed $24 collection of CV, poster and research-statement templates.</p><div class="actions"><a class="btn" href="../free-sample/quant-cv.tex" download>Download free .tex sample</a><a class="btn alt" href="https://github.com/HugoWEI/quantresearch-studio-site/issues/1" target="_blank" rel="noopener noreferrer">Share feedback (GitHub)</a></div><p class="muted" style="font-size:12px;margin-top:14px">Prelaunch: no checkout, email collection or tracking is active on this page. Feedback requires a GitHub account and is public.</p></div>
+</div></main>
+<footer><div class="wrap">© 2026 QuantResearch Studio · Independent original educational resource · No recruitment or admissions guarantees.</div></footer>
+</body></html>
