@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="QuantResearch Studio: original LaTeX CV, research poster and PhD research-statement templates for technical careers. Free editable quant CV sample.">
+<title>QuantResearch Studio — Technical work, clearly presented</title>
+<meta name="theme-color" content="#f9fbfa">
+<style>
+:root{--ink:#11273b;--muted:#516575;--teal:#116d6e;--pale:#e9f2ef;--line:#dce6e4;--bg:#f8fbf9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+a{color:var(--teal)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 25px}
+nav{border-bottom:1px solid var(--line);background:#fff}
+.nav{height:76px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.brand{font-size:20px;font-weight:850;letter-spacing:-.055em;text-decoration:none;color:var(--ink)}
+.brand span{color:var(--teal)}
+.nav-right{display:flex;gap:25px;align-items:center;font-size:13px}
+.nav-right a{text-decoration:none;color:var(--ink)}
+.tag{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#3f7166;background:#e8f3ee;padding:8px 12px;border-radius:50px;font-weight:750}
+.hero{display:grid;grid-template-columns:1fr .88fr;align-items:center;gap:56px;padding:78px 0 70px}
+.kicker{text-transform:uppercase;letter-spacing:.16em;color:var(--teal);font-weight:800;font-size:12px}
+h1{font-size:clamp(41px,5.2vw,66px);line-height:1.06;letter-spacing:-.064em;margin:16px 0 21px}
+h2{font-size:clamp(29px,3.4vw,44px);line-height:1.13;letter-spacing:-.053em;margin:12px 0 15px}
+h3{font-size:18px;margin:4px 0 10px;letter-spacing:-.025em}
+.lead{font-size:18px;color:var(--muted);max-width:530px;margin:0 0 28px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 19px;background:var(--ink);border:1px solid var(--ink);border-radius:9px;color:white;text-decoration:none;font-size:14px;font-weight:750}
+.btn:hover{background:#254661}
+.btn.alt{background:transparent;color:var(--ink);border-color:#acbfbb}
+.btn.alt:hover{background:#edf4f0}
+.small{font-size:12px;color:var(--muted)}
+.sheet-wrap{background:#e7f1ed;border:1px solid #d0e4db;border-radius:23px;padding:31px;box-shadow:0 20px 55px #0d313912;position:relative}
+.corner{position:absolute;top:11px;right:12px;background:white;color:#496f65;font-size:10px;font-weight:750;padding:6px 9px;border-radius:5px}
+.sheet{aspect-ratio:210/297;max-width:390px;background:white;margin:auto;padding:29px 27px;box-shadow:0 8px 26px #0d263423;color:#18314b;font-family:Arial,Helvetica,sans-serif;overflow:hidden}
+.sheet h4{font-size:20px;letter-spacing:-.04em;margin:0}
+.sheet .contact{font-size:7px;color:#657a89;margin-top:3px}
+.sheet .specialism{font-size:8px;color:#117b84;font-weight:700;margin-top:6px}
+.sheet h5{font-size:9px;text-transform:uppercase;border-bottom:1px solid #27848d;margin:19px 0 8px;padding-bottom:5px}
+.entry{font-size:8px;margin-top:9px}
+.entry strong{font-size:9px}
+.entry em{color:#607486}
+.entry ul{padding-left:13px;margin:5px 0}
+.entry li{margin:4px 0}
+.section{padding:72px 0}
+.band{background:white;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin-top:30px}
+.tile{border:1px solid var(--line);background:var(--bg);border-radius:14px;padding:24px}
+.tile p{margin:0;color:var(--muted);font-size:14px}
+.tile .index{font-size:12px;color:var(--teal);font-weight:750;letter-spacing:.1em}
+.price-grid{display:grid;grid-template-columns:1.07fr .93fr;gap:55px;align-items:center}
+.pricebox{background:white;border:1px solid var(--line);box-shadow:0 10px 35px #17382e12;border-radius:15px;padding:32px}
+.price{font-size:65px;line-height:1.1;font-weight:850;letter-spacing:-.07em;margin:7px 0}
+.pricebox ul{padding-left:20px;color:var(--muted);line-height:1.95;margin:16px 0 23px}
+.prelaunch{background:#eaf4f1;border-left:3px solid var(--teal);padding:15px 17px;font-size:13px;color:#315a54;border-radius:5px;margin-top:17px}
+.faq details{border-bottom:1px solid var(--line);padding:18px 0}
+.faq summary{cursor:pointer;font-weight:750}
+.faq p{font-size:14px;color:var(--muted);max-width:850px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:12px;padding:27px 0 45px}
+:focus-visible{outline:3px solid #62c8b7;outline-offset:3px}
+@media(max-width:840px){.hero,.price-grid{grid-template-columns:1fr;gap:36px}.hero{padding:46px 0}.sheet-wrap{max-width:550px;margin:auto;width:100%}.nav-right a{display:none}.grid{grid-template-columns:1fr}.section{padding:54px 0}.sheet{max-width:360px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav"><a class="brand" href="#">Quant<span>Research</span> Studio</a><div class="nav-right"><a href="#included">Templates</a><a href="#pricing">Price</a><span class="tag">Founding beta</span></div></div></nav>
+<main>
+<header class="wrap hero">
+<div>
+<div class="kicker">LaTeX templates for technical careers</div>
+<h1>Your research is complex.<br>Your documents shouldn't be.</h1>
+<p class="lead">Sharp, editable CVs, academic posters and PhD statements for quantitative finance and scientific research. Original templates, realistic examples and practical documentation—not generic design files.</p>
+<div class="actions"><a class="btn" href="free-sample/quant-cv.tex" download>Get the free LaTeX CV sample</a><a class="btn alt" href="#pricing">Explore the $24 kit</a></div>
+<p class="small">The free sample is an editable .tex file. Compile it with pdfLaTeX or upload it to Overleaf. All example work is fictional.</p>
+</div>
+<div class="sheet-wrap" aria-label="Illustrative CV layout based on the free sample">
+<div class="corner">Sample layout · Illustrative view</div>
+<div class="sheet">
+<h4>ALEX MORGAN</h4>
+<div class="contact">London, UK &nbsp; | &nbsp; alex.morgan@example.org &nbsp; | &nbsp; github.com/example</div>
+<div class="specialism">Quantitative Research &nbsp; / &nbsp; Derivatives &nbsp; / &nbsp; Statistical Computing</div>
+<h5>Experience</h5>
+<div class="entry"><strong>Quantitative Research Intern</strong> &nbsp; <em>Jun–Aug 2026</em><br>Northbridge Analytics (fictional) · London, UK
+<ul><li>Built a Python calibration pipeline for synthetic interest-rate options data and reduced repeated runtime by 35%.</li><li>Benchmarked model error against Monte Carlo estimates; documented limitations and reproducibility.</li><li>Developed unit-tested C++ numerical routines for pricing and risk analysis.</li></ul></div>
+<div class="entry"><strong>Research Assistant</strong> &nbsp; <em>Sep 2025–May 2026</em><br>Example Institute of Applied Mathematics
+<ul><li>Studied nonlinear point-process models for simulated market events.</li></ul></div>
+<h5>Selected projects</h5>
+<div class="entry"><strong>Market Microstructure Simulation</strong><br>Built an event-driven simulator to test liquidity and volatility sensitivity.</div>
+<h5>Education</h5>
+<div class="entry"><strong>MSc Applied Mathematics</strong> &nbsp; Example University (fictional)<br>Stochastic Calculus, Numerical Methods, Statistical Learning</div>
+<h5>Technical skills</h5>
+<div class="entry">Python · C++17 · NumPy · Git · Monte Carlo · Optimization</div>
+</div>
+</div>
+</header>
+<section class="section band" id="included"><div class="wrap"><div class="kicker">Built for technical people</div><h2>Four formats. One thoughtful system.</h2><p class="muted">Spend less time adjusting margins and more time explaining what you actually achieved.</p>
+<div class="grid">
+<article class="tile"><div class="index">01 / CAREER</div><h3>Quant CV</h3><p>Present models, numerical methods, coding and market work in a disciplined one-page structure.</p></article>
+<article class="tile"><div class="index">02 / ACADEMIA</div><h3>Research CV</h3><p>Show publications, projects, methodology and research contributions with readable hierarchy.</p></article>
+<article class="tile"><div class="index">03 / RESEARCH</div><h3>Poster + statement</h3><p>Communicate technical results through clean poster layouts and research-statement prompts.</p></article>
+</div></div></section>
+<section class="section" id="pricing"><div class="wrap price-grid">
+<div><div class="kicker">Proposed founding release</div><h2>Present your work with confidence.</h2><p class="muted">The finished commercial kit is planned to include four editable LaTeX source templates, compiled examples, writing guidance and clear setup instructions.</p><p class="muted">Our aim is not to guarantee interviews or admissions. It's to remove document-formatting friction while helping you describe technical contributions precisely.</p></div>
+<div class="pricebox"><div class="kicker">Proposed one-time price</div><div class="price">$24</div><p class="muted">Full QuantResearch Studio bundle · Prelaunch</p>
+<ul><li>Quant CV and research CV</li><li>Scientific poster and PhD research statement</li><li>Worked fictional examples</li><li>Compilation and editing guide</li></ul>
+<a class="btn" style="width:100%" href="free-sample/quant-cv.tex" download>Try the free sample first</a>
+<div class="prelaunch"><strong>Not taking orders yet.</strong> The $24 offer is being tested. This preview contains no payment form, analytics tracker or personal-data collection.</div></div>
+</div></section>
+<section class="section band faq"><div class="wrap"><div class="kicker">Frequently asked</div><h2>Before you edit</h2>
+<details><summary>Will it work in Overleaf?</summary><p>The free template is standard LaTeX and intended for pdfLaTeX compilation. Upload the .tex file to Overleaf or compile locally. Full bundle compatibility will be verified before launch.</p></details>
+<details><summary>Will it pass an applicant-tracking system?</summary><p>No template can guarantee ATS compatibility. We focus on simple structure, selectable text and legible formatting, which can then be tested in the relevant application process.</p></details>
+<details><summary>Can I sell or redistribute the templates?</summary><p>The free file is made available for your own educational or professional document creation. Repackaging or reselling the template itself is not authorized. Commercial bundle license terms will be published before checkout launches.</p></details>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 QuantResearch Studio · Independent prelaunch project · Not affiliated with or endorsed by any employer or university. All example experience is fictional.</div></footer>
+</body>
+</html>
